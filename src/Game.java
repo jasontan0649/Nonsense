@@ -74,7 +74,7 @@ public class Game {
         for (Player p : getPlayers()) {
             int spaceLen = maxLen - p.getName().length();
             System.out.print(p.getName() + " ".repeat(spaceLen) + ":");
-            System.out.print(PrintCard.avlCards(p));
+            System.out.print(PrintCard.avlCards(p.getCards()));
             System.out.println();
         }
     }

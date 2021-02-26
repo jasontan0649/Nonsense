@@ -3,9 +3,8 @@ import java.util.Collections;
 import java.util.Queue;
 
 public class PrintCard {
-    public static String avlCards(Player p) {
+    public static String avlCards(Queue<ArrayList<Card>> cards) {
         StringBuilder res = new StringBuilder();
-        Queue<ArrayList<Card>> cards = p.getCards();
         for (ArrayList<Card> cardPart : cards) {
             res.append(strCardPart(cardPart) + ",");
         }
